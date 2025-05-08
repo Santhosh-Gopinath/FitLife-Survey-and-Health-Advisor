@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .symptom-tag {
+            transition: all 0.3s;
+        }
+        .symptom-tag:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="relative py-3 sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto">
+        <div class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
+            <div class="max-w-md mx-auto">
+                <div>
+                    <h1 class="text-3xl font-extrabold text-gray-900 text-center mb-6">Prediction Results</h1>
+                </div>
+
+                <div id="prediction-results" class="space-y-6">
+                    <div class="border-t pt-6">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-4">Prediction Results</h2>
+                        
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4 mb-4">
+                            <div class="flex">
+                                <div class="ml-3">
+                                    <p class="text-sm text-green-700">
+                                        Predicted Disease: <span id="predicted-disease" class="font-bold"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="analyzed-symptoms-container" class="mb-4">
+                            <h3 class="text-lg font-medium text-gray-900 mb-2">Analyzed Symptoms</h3>
+                            <div id="analyzed-symptoms" class="flex flex-wrap gap-2">
+                                <!-- Symptoms will appear here -->
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Disease Description</h3>
+                                <p id="disease-description" class="mt-1 text-sm text-gray-600"></p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Precautions</h3>
+                                <ul id="disease-precautions" class="mt-1 text-sm text-gray-600 list-disc pl-5">
+                                    <!-- Precautions will appear here -->
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Recommended Medications</h3>
+                                <ul id="disease-medications" class="mt-1 text-sm text-gray-600 list-disc pl-5">
+                                    <!-- Medications will appear here -->
+                                </ul>
+                                <p class="text-xs text-gray-500 italic mt-1">Note: Always consult with a healthcare professional before taking any medication.</p>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Recommended Diet</h3>
+                                <ul id="disease-diets" class="mt-1 text-sm text-gray-600 list-disc pl-5">
+                                    <!-- Diet recommendations will appear here -->
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900">Workout Recommendations</h3>
+                                <p id="disease-workout" class="mt-1 text-sm text-gray-600"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script3.js"></script>
+</body>
+</html>

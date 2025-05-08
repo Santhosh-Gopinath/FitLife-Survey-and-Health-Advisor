@@ -1,0 +1,39 @@
+[
+            
+    
+    {
+        "predicted_disease": "Fungal infection",
+        "symptoms": [
+            "itching",
+            "skin_rash",
+            "cough"
+        ],
+        "dis_des": "Fungal infection is a common skin condition caused by fungi.",
+        "precautions": [
+            "bath twice",
+            "use detol or neem in bathing water",
+            "keep infected area dry",
+            "use clean cloths"
+        ],
+        "medications": [
+            "['Antifungal Cream', 'Fluconazole', 'Terbinafine', 'Clotrimazole', 'Ketoconazole']"
+        ],
+        "diets": [
+            "['Antifungal Diet', 'Probiotics', 'Garlic', 'Coconut oil', 'Turmeric']"
+        ],
+        "workouts": [
+            "Avoid sugary foods",
+            "Consume probiotics",
+            "Increase intake of garlic",
+            "Include yogurt in diet",
+            "Limit processed foods",
+            "Stay hydrated",
+            "Consume green tea",
+            "Eat foods rich in zinc",
+            "Include turmeric in diet",
+            "Eat fruits and vegetables"
+        ],
+        "timestamp": "2025-04-30T07:30:21.377302"
+    },
+    
+]
